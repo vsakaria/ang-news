@@ -9,7 +9,7 @@ var app = angular
         'ngRoute',
         'firebase'
     ])
-    .config(function($routeProvider) {
+    .config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'views/posts.html',
@@ -22,6 +22,6 @@ var app = angular
             .otherwise({
                 redirectTo: '/'
             });
-    })
+    }])
 
 .constant('FIREBASE_URL', 'https://scorching-fire-4068.firebaseio.com/');
