@@ -81,3 +81,8 @@ app.animation('.answer-animation', function(){
     }
   };
 });
+
+angular.element(document).ready(function () {
+  TweenMax.set($("div.back"), {rotationX:-180});
+});
+
