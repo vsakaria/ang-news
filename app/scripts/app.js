@@ -8,7 +8,8 @@ var app = angular
         'ngSanitize',
         'ngRoute',
         'ngAnimate',
-        'firebase'
+        'firebase',
+        'ui.bootstrap'
     ])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider

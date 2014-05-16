@@ -10,4 +10,8 @@ app.controller('NavCtrl', [ '$scope', '$location', 'Post',
         $scope.post = {url: 'http://', title: ''};
       });
     };
+
+    $scope.ok = function() {
+      console.log('Nav');
+    };
   }]);

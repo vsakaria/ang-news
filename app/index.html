@@ -25,9 +25,22 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ng-include="'views/nav.html'"></div>
-    <img id='jslogo' src='images/js.png'></img>
-    <div id='main-post-container' class="container" ng-view=""></div>
+    <section ng-include="'views/nav.html'"></section>
+    <figure><img id='jslogo' src='images/js.png'></img></figure>
+    <section id='main-post-container' class="container" ng-view=""></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -63,7 +76,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="/bower_components/angular-animate/angular-animate.js"></script>
         <script src="/bower_components/greensock/src/minified/TweenMax.min.js"></script>
-        <script src="scripts/bootstrap-ui/ui-bootstrap-custom-0.10.0.js"></script>
+        <script src="scripts/bootstrap-ui/ui-bootstrap-custom-tpls-0.10.0.js"></script>
 
         <script src="scripts/app.js"></script>
         <script src='scripts/services/posts.js'></script>
@@ -71,7 +84,7 @@
         <script src="scripts/controllers/posts.js"></script>
         <script src="scripts/controllers/postview.js"></script>
         <script src="scripts/controllers/nav.js"></script>
-        <script src="scripts/controllers/animation.js"></script>
+        <script src="scripts/controllers/addnewctrl.js"></script>
 
         <!-- endbuild -->
 </body>
