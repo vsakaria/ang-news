@@ -44,13 +44,13 @@ app.animation('.answer-animation', function(){
 
   CSSPlugin.defaultTransformPerspective = 1000;
 
-  TweenMax.set($("div.back"), {rotationX:-180});
+  TweenMax.set($(".back"), {rotationX:-180});
 
-  $.each($("div.box"), function(i,element)
+  $.each($(".box"), function(i,element)
   {
     console.log(element);
-    var frontCard = $(this).children("div.front")
-    var backCard = $(this).children("div.back")
+    var frontCard = $(this).children(".front")
+    var backCard = $(this).children(".back")
     var tl = new TimelineMax({paused:true})
 
     tl

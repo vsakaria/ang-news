@@ -1,5 +1,16 @@
 body {
-  background: #F0DB4F;
+  background: #f0f8ff;
+}
+
+main {
+  margin: 0 auto;
+  width: 730px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 42px;
+}
+#main-post-container{
+  width: 800px;
 }
 
 #jslogo {
@@ -9,17 +20,31 @@ body {
   top: 5px;
 }
 
-.navbar-form {
-  width: 466px;
-  margin: 20px auto;
+.add-new{
+  left: 351px;
+  top: 115px;
+  position: absolute;
 }
 
-.add-new{
-  float: right;
-}
 /* MAIN POSTS PAGE */
+ul {
+  list-style-type: none;
+}
+
+li:first-child {
+  margin-top:  60px;
+}
+
+li {
+  margin-bottom:  160px;
+}
+.clear{
+  clear: both;
+}
+
 .info {
-  background: #9BDAEE;
+  background: #FFFFFF;
+  border: 1px solid #B9D7F3;
   width: 650px;
   height: 150px;
   -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
@@ -27,10 +52,6 @@ body {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   text-align: left;
   font-size: 45px;
-}
-
-#main-post-container{
-  width: 800px;
 }
 
 .info a{
@@ -44,7 +65,7 @@ body {
   text-decoration: none;
 }
 
-.sub-info a, .info-button{
+.button a, .info-button{
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -58,7 +79,7 @@ body {
   right: 49px
 }
 
-.sub-info a:hover{
+.button a:hover{
   color: #458AC9;
   text-decoration: none;
 }
@@ -70,7 +91,6 @@ body {
   margin-left:5px;
 }
 
-
 /* Animations */
 
 .box{
@@ -80,25 +100,13 @@ body {
 }
 
 .front, .back {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    padding:35px 50px;
-    margin-bottom: 20px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  padding:35px 50px;
+  margin-bottom: 20px;
 }
 
 .post{
   display: inline;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin-bottom:  160px;
-
-}
-.clear{
-  clear: both;
 }

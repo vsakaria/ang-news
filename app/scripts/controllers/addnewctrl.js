@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('ModalDemoCtrl',[ '$scope', '$modal', function ($scope, $modal) {
+app.controller('ModalCtrl',[ '$scope', '$modal', function ($scope, $modal) {
   var modalInstance;
 
   $scope.open = function () {
