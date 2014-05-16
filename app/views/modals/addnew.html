@@ -1,0 +1,26 @@
+<script type="text/ng-template" id="myModalContent.html">
+    <header class="modal-header">
+        <h3 class="modal-title">Add a new JS Lib</h3>
+    </header>
+
+    <section class="modal-body">
+
+      <form ng-controller="NavCtrl" class="navbar-form" role="search" ng-submit="submitPost()">
+        <div class="form-group">
+        <input type="text" class="form-control" placeholder="Title" ng-model="post.title">
+      </div>
+
+      <div class="form-group">
+      <input type="text" class="form-control" placeholder="Link" ng-model="post.url">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Description" ng-model="post.description">
+      </div>
+
+
+      <button ng-controller="ModalDemoCtrl" ng-click="ok()" type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+    </section>
+</script>
